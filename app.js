@@ -1,36 +1,29 @@
-import React from "react";
+import React, { Component } from "react";
 import ReactDOM from "react-dom/client";
 
-const heading = React.createElement(
-  "h1",
-  { id: "heading", abc: "adb" },
-  "Hello from react"
+
+// JSX ( transpiles before it reaches the JS)-> PARCEL -> Babel 
+
+// JSX -> Babel transpiles it to React.createElement -> ReactElement - JS object -> HTMLElement(render)
+
+const jsxHeading =  <h1 className="head" tabIndex="5"> Hello from the Jsx Side</h1> // jsx element
+
+
+const HeadingFromSecondComponent =()=>(  <h1 className="head" tabIndex="5"> Hello from the Jsx Side</h1> 
+);// jsx element
+
+// functional Component
+const Heading =()=>(
+  <div id = "container">
+    {HeadingFromSecondComponent()}
+    <HeadingFromSecondComponent></HeadingFromSecondComponent> 
+    <HeadingFromSecondComponent/> 
+    <h1 className="head" tabIndex="5"> Hello from Functional component</h1>
+  </div>
 );
 
-const parent = React.createElement("div", { id: "parent" }, [
-  React.createElement("div", { id: "child1" }, [
-    React.createElement(
-      "h1",
-      { id: "heading", abc: "adb" },
-      "H1 tag from child 1"
-    ),
-    React.createElement(
-      "h2",
-      { id: "heading", abc: "adb" },
-      "H2 tag from child 1"
-    ),
-  ]), React.createElement("div", { id: "child2" }, [
-    React.createElement(
-      "h1",
-      { id: "heading", abc: "adb" },
-      "H1 tag from child 2"
-    ),
-    React.createElement(
-      "h2",
-      { id: "heading", abc: "adb" },
-      "H2 tag from child 2"
-    ),
-  ])
-]);
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+// Component composition is component inside another component
+
+console.log(jsxHeading);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));root.render(<Heading/>);
