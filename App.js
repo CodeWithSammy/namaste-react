@@ -1,18 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const parent = React.createElement(
-  "div",    
-  { id: "parent" },
-  [React.createElement("div", { id: "child" }, [
-    React.createElement("h1", { id: "grandchild" }, "H1 tag 1"),
-    React.createElement("h1", { id: "grandchild" }, "H1 tag 2"),
-  ]),React.createElement("div", { id: "child" }, [
-    React.createElement("h1", { id: "grandchild" }, "H1 tag 1.1"),
-    React.createElement("h1", { id: "grandchild" }, "H1 tag 2.2"),
-  ])]
-);
+const Title = () => {
+  return <h1 className="head" tabIndex="5">Namaste React hahahaha</h1>;
+};
+const number =100+20;
+const HeadingComponent = () => {
+  return (
+    <div className="heading-container">
+      <Title />
+      {Title()}
+      <Title></Title>
+      {number}
+      <h1 className="heading">Namaste React via Functional component</h1>
+    </div>
+  );
+};
 
-const heading = React.createElement("h1", {}, "Hello, World!");
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+
+root.render(<HeadingComponent />);
