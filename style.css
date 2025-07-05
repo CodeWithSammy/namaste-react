@@ -1,0 +1,101 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.nav-items{
+    display: flex;
+    
+}
+.nav-items ul{
+    display: flex;
+    list-style: none;
+
+}
+.nav-items ul li{
+    
+    margin: 5px 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+.nav-items ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+.res-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: justify-content;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+    min-height: 100vh;
+    height: 100vh;
+    overflow-y: auto;
+    position: relative;
+}
+.res-container h1{
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.res-container p{
+    font-size: 18px;
+    color: #666;
+}
+.res-container img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    margin-bottom: 20px;
+}
+.res-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+.res-card h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+.res-card p{
+    font-size: 16px;
+    color: #666;
+}
+.res-card a{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 5px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;   
