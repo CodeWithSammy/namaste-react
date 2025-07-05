@@ -12,7 +12,7 @@ const HeadingComponent = () => {
       {Title()}
       <Title></Title>
       {number}
-      <h1 className="heading">Namaste React via Functional component</h1>
+      <h1 className="heading">Namaste React via Functional component </h1>
     </div>
   );
 };
