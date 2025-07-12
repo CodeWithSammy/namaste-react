@@ -6,6 +6,7 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
+import ResMenu from "./components/ResMenu";
 
 const AppLayout = () => {
   return (
@@ -22,6 +23,9 @@ const appRouter = createBrowserRouter([
       {path: "/", element: <Body />},
       { path: "/about", element: <About /> },
   {path:"/contact", element:<Contact />},
+  {path: "/restaurant/:id", element: <ResMenu />},
+  // This is a placeholder for the restaurant details page
+  // You can create a separate component for restaurant details and use it here}
 ]}
   
 ]);
