@@ -2,13 +2,9 @@
   "name": "namaste-react",
   "version": "1.0.0",
   "description": " this is samuel",
-  
- 
   "scripts": {
     "start": "parcel index.html"
-  }
-,
-
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CodeWithSammy/namaste-react.git"
@@ -23,7 +19,7 @@
     "parcel": "^2.15.4"
   },
   "dependencies": {
-    "react": "^19.1.0"
+    "react": "^19.1.0",
+    "react-router-dom": "^7.6.3"
   }
-
 }
